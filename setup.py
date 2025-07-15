@@ -10,13 +10,13 @@ def read_readme():
     return 'Helper functions for Google Cloud Storage operations'
 
 setup(
-    name='helpers-py',
+    name='helpers_py',
     version='0.1.0',
     author='ToolProof',
     description='Helper functions for Google Cloud Storage operations',
     long_description=read_readme(),
     long_description_content_type='text/markdown',
-    url='https://github.com/ToolProof/helpers-py',
+    url='https://github.com/ToolProof/helpers_py',
     packages=find_packages(),
     classifiers=[
         'Programming Language :: Python :: 3',

@@ -1,5 +1,5 @@
 '''
-Helpers-py: Utility functions for Google Cloud Storage operations.
+helpers_py: Utility functions for Google Cloud Storage operations.
 '''
 
 from .gcs_utils import download_from_gcs, upload_to_gcs
