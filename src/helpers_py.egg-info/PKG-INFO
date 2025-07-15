@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: helpers_py
+Version: 0.1.0
+Summary: Helper functions for Google Cloud Storage operations
+Home-page: https://github.com/ToolProof/helpers_py
+Author: ToolProof
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: google-cloud-storage
+Requires-Dist: python-dotenv
+Dynamic: author
+Dynamic: classifier
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
