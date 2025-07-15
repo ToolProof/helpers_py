@@ -1,5 +1,5 @@
 import os
-from setuptools import setup, find_packages
+from setuptools import setup
 
 # Read README file if it exists
 def read_readme():
@@ -17,8 +17,8 @@ setup(
     long_description=read_readme(),
     long_description_content_type='text/markdown',
     url='https://github.com/ToolProof/helpers_py',
-    packages=find_packages(where="src"),
-    package_dir={"": "src"},
+    packages=['helpers_py'],
+    package_dir={'helpers_py': 'src/helpers_py'},
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',
