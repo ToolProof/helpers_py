@@ -24,17 +24,10 @@ def _get_bucket_name():
     return _bucket_name
 
 def _get_storage_client():
-    """Get storage client with lazy initialization."""
     global _storage_client
     if _storage_client is None:
-        if os.getenv('GOOGLE_APPLICATION_CREDENTIALS'):
-            print('Using credentials from GOOGLE_APPLICATION_CREDENTIALS')
-            _storage_client = storage.Client()
-        elif os.getenv('K_SERVICE'):
-            print('Using Application Default Credentials (ADC).')
-            _storage_client = storage.Client()
-        else:
-            raise RuntimeError('No Google Cloud credentials found. Set GCP_* environment variables or GOOGLE_APPLICATION_CREDENTIALS.')
+        _storage_client = storage.Client()  # Automatically uses ADC or env var or metadata server
+        print("Initialized GCS client using Application Default Credentials.")
     return _storage_client
 
 
